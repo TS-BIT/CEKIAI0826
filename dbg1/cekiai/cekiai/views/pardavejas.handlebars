@@ -1,0 +1,8 @@
+<form action="/pardavejai/save" method="POST">
+    {{#if id}}
+    <input type="hidden" name="id" value="{{id}}">
+    {{/if}}
+    Pavadinimas: <input type="text" name="pavadinimas" value="{{ pavadinimas }}"><br>
+    <input type="submit" value="Save">
+</form>
+<a href="/pardavejai">Back</a>

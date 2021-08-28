@@ -1,0 +1,17 @@
+<a href="/pardavejai/naujas">Naujas</a>
+<table>
+{{#each pardavejai}}
+    <tr>
+        <td>
+            {{this.pavadinimas}}
+        </td>
+        <td>
+            <a href="/pardavejai/{{this.id}}">edit</a>
+        </td>
+        <td>
+            <a href="/pardavejai/{{this.id}}/delete">X</a>
+        </td>
+    </tr>
+{{/each}}
+</table>
+<a href="/">Back</a>
