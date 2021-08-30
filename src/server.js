@@ -3,6 +3,7 @@ import exphbs from "express-handlebars";
 
 import { router as pardavejaiRouter } from "./pardavejai.js";
 import { router as mokejimoTipaiRouter } from "./mokejimoTipai.js";
+import { router as islaiduTipaiRouter } from "./islaiduTipai.js";
 
 const app = express();
 const hbs = exphbs({
@@ -28,6 +29,7 @@ app.use(express.urlencoded({
 
 app.use("/pardavejai", pardavejaiRouter);
 app.use("/mokejimoTipai", mokejimoTipaiRouter);
+app.use("/islaiduTipai", islaiduTipaiRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
