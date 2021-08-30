@@ -1,0 +1,14 @@
+<form action="/preke/save" method="POST">
+    {{#if id}}
+    <input type="hidden" name="id" value="{{id}}">
+    {{/if}}
+    Pavadinimas: <input type="text" name="pavadinimas" value="{{ pavadinimas }}"><br>
+    <input type="submit" value="Save">
+    Kaina: <input type="text" name="kaina" value="{{ kaina }}"><br>
+    <input type="submit" value="Save">
+    cekiai_id: <input type="text" name="cekiai_id" value="{{ cekiai_id }}"><br>
+    <input type="submit" value="Save">
+    islaidu_tipai_id: <input type="text" name="islaidu_tipai_id" value="{{ islaidu_tipai_id }}"><br>
+    <input type="submit" value="Save">
+</form>
+<a href="/prekes">Back</a>

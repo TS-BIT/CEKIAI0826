@@ -1,0 +1,23 @@
+<a href="/cekiai/naujas">Naujas</a>
+<table>
+{{#each cekiai}}
+    <tr>
+        <td>
+            {{this.data}}
+        </td>
+        <td>
+            {{this.pardavejai_id}}
+        </td>
+        <td>
+            {{this.apmokejimo_tipai_id}}
+        </td>
+        <td>
+            <a href="/cekiai/{{this.id}}">edit</a>
+        </td>
+        <td>
+            <a href="/cekiai/{{this.id}}/delete">X</a>
+        </td>
+    </tr>
+{{/each}}
+</table>
+<a href="/">Back</a>

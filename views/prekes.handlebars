@@ -1,0 +1,26 @@
+<a href="/prekes/naujas">Naujas</a>
+<table>
+{{#each prekes}}
+    <tr>
+        <td>
+            {{this.pavadinimas}}
+        </td>
+        <td>
+            {{this.kaina}}
+        </td>
+        <td>
+            {{this.cekiai_id}}
+        </td>
+        <td>
+            {{this.islaidu_tipai_id}}
+        </td>
+        <td>
+            <a href="/prekes/{{this.id}}">edit</a>
+        </td>
+        <td>
+            <a href="/prekes/{{this.id}}/delete">X</a>
+        </td>
+    </tr>
+{{/each}}
+</table>
+<a href="/">Back</a>
